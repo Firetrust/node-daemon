@@ -1,6 +1,6 @@
 {
   "name": "node-daemon",
-  "description": "Turns a Node Application into a Daemon Process",
+  "description": "Daemonise a Node Application",
   "version": "1.0.0",
   "private": true,
   "author": "Ryan Johnston <ryan@mediapixel.co.nz>",
