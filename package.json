@@ -1,0 +1,13 @@
+{
+  "name": "node-daemon",
+  "description": "Turns a Node Application into a Daemon Process",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Ryan Johnston <ryan@mediapixel.co.nz>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Firetrust/node-daemon.git"
+  },
+  "dependencies": {
+  }
+}

@@ -1,4 +1,4 @@
 node-daemon
 ===========
 
-Turns a Node Application into a Daemon Process
+Daemonise a Node Application
