@@ -7,7 +7,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Firetrust/node-daemon.git"
-  },
-  "dependencies": {
   }
 }
