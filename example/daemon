@@ -1,0 +1,35 @@
+#!/usr/bin/env node
+
+process.on('uncaughtException', function(err) {
+  console.log(err.message);
+});
+
+var daemon = require('..')({
+  name: 'ryan',
+  main: './app.js',
+  pidfile: './ryan.pid'
+});
+
+switch (process.argv[2]) {
+  case 'start':
+    daemon.start();
+    break;
+  case 'stop':
+    daemon.stop();
+    break;
+  case 'kill':
+    daemon.kill();
+    break;
+  case 'restart':
+    daemon.stop(function() {
+      daemon.start();
+    });
+    break;
+  case 'status':
+    var p = daemon.status();
+    if (p) console.log('Daemon running. PID: ' + p);
+    else console.log('Daemon not running');
+    break;
+  default:
+    console.log('Usage: [start|stop|kill|restart|status]');
+}
