@@ -4,11 +4,7 @@ process.on('uncaughtException', function(err) {
   console.log(err.message);
 });
 
-var daemon = require('..')({
-  name: 'ryan',
-  main: './app.js',
-  pidfile: './ryan.pid'
-});
+var daemon = require('..')('daemon-test');
 
 switch (process.argv[2]) {
   case 'start':
